@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>PixiJS SWF -> GAF test</title>
+  <title>PixiJS + SWF -> GAF test</title>
   <script src="./js/pixi.min.js"></script>
   <script src="./js/PixiGAFPlayer.min.js"></script>
   <style>
@@ -20,7 +20,7 @@
 
 <body>
 
-  <h1>PixiJS</h1>
+  <h1>PixiJS +</h1>
   <h2>SWF -> GAF test</h2>
 
   <p>use library: <a href="https://github.com/mathieuanthoine/PixiGAFPlayer" target="_blank">
@@ -28,7 +28,13 @@
 
   <p>use asset: <a href="http://store.tkool.jp/free-downloads/free-stuff" target="_blank">
       http://store.tkool.jp/free-downloads/free-stuff</a></p>
-
+  <p>change animation: </p>
+  <form>
+    <button type="button" onclick="changeAnimation('front', 'mc_3')">&nbsp;man walk front&nbsp;</button>
+    <button type="button" onclick="changeAnimation('left', 'mc_3')">&nbsp;man walk left&nbsp;</button>
+    <button type="button" onclick="changeAnimation('right', 'mc_3')">&nbsp;man walk right&nbsp;</button>
+    <button type="button" onclick="changeAnimation('back', 'mc_3')">&nbsp;man walk back&nbsp;</button>
+  </form>
   <script src="main.js"></script>
 
 </body>

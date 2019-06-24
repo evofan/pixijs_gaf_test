@@ -6,3 +6,6 @@
 
 **GAF media**  
 [https://gafmedia.com/](https://gafmedia.com/)
+
+**DEMO**  
+[https://evofan.github.io/pixijs_gaf_test/](https://evofan.github.io/pixijs_gaf_test/)
