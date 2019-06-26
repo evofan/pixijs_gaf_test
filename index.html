@@ -5,38 +5,67 @@
   <meta charset="utf-8">
   <title>PixiJS + SWF -> GAF test</title>
   <script src="./js/pixi.min.js"></script>
-  <script src="./js/PixiGAFPlayer.min.js"></script>
+  <script src="./js/PixiGAFPlayer.js"></script>
   <style>
     * {
       padding: 0;
-      margin: 0
+      margin: 0;
+      text-align: center;
+    }
+
+    #container {
+      width: 90%;
     }
 
     canvas {
       background-color: #336699;
+    }
+
+    h3 {
+      color: #ff0033;
+    }
+
+    div {
+      margin-top: 30px;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>PixiJS +</h1>
-  <h2>SWF -> GAF test</h2>
+  <div id="conatiner">
 
-  <p>use library: <a href="https://github.com/mathieuanthoine/PixiGAFPlayer" target="_blank">
-      https://github.com/mathieuanthoine/PixiGAFPlayer</a></p>
+    <h1>PixiJS +</h1>
+    <h2>SWF -> GAF test</h2>
 
-  <p>use asset: <a href="http://store.tkool.jp/free-downloads/free-stuff" target="_blank">
-      http://store.tkool.jp/free-downloads/free-stuff</a></p>
-  <p>change animation: </p>
-  <form>
-    <button type="button" onclick="changeAnimation('front', 'mc_3')">&nbsp;man walk front&nbsp;</button>
-    <button type="button" onclick="changeAnimation('left', 'mc_3')">&nbsp;man walk left&nbsp;</button>
-    <button type="button" onclick="changeAnimation('right', 'mc_3')">&nbsp;man walk right&nbsp;</button>
-    <button type="button" onclick="changeAnimation('back', 'mc_3')">&nbsp;man walk back&nbsp;</button>
-  </form>
-  <script src="main.js"></script>
+    <p>use library: <a href="https://github.com/mathieuanthoine/PixiGAFPlayer" target="_blank">
+        https://github.com/mathieuanthoine/PixiGAFPlayer</a></p>
 
+    <p>use asset: <a href="http://store.tkool.jp/free-downloads/free-stuff" target="_blank">
+        http://store.tkool.jp/free-downloads/free-stuff</a></p>
+
+    <div id="canvas1"></div>
+
+    <h3>change animation: </h3>
+    <form>
+      <button type="button" onclick="changeAnimation('front', 'mc_3')">&nbsp;man walk front&nbsp;</button>
+      <button type="button" onclick="changeAnimation('left', 'mc_3')">&nbsp;man walk left&nbsp;</button>
+      <button type="button" onclick="changeAnimation('right', 'mc_3')">&nbsp;man walk right&nbsp;</button>
+      <button type="button" onclick="changeAnimation('back', 'mc_3')">&nbsp;man walk back&nbsp;</button>
+    </form>
+
+    <div id="canvas2"></div>
+
+    <h3>get callback event: </h3>
+    <form>
+      <button type="button" onclick="startAnimation()">&nbsp;draw a fortune&nbsp;</button>
+    </form>
+
+    <p>&nbsp;<br></p>
+
+    <script src="main.js"></script>
+
+  </div>
 </body>
 
 </html>
