@@ -1,4 +1,4 @@
-# PixiJS上でswf(Gaf)を再生するテスト
+# PixiJS上で.swf(.gaf)ファイルを再生するテスト
 参照元は下記
 
 **PixiGAFPlayer**  
